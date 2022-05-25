@@ -3,10 +3,7 @@ const express = require('express')
 const userRouter = require('./routers/user-router')
 const taskRouter = require('./routers/task-router')
 const databaseConnect = require('./db/mongoose.js')
-const dotenv = require('dotenv')
 require('./db/mongoose')
-
-dotenv.config({ path: '.env' })
 
 const port = process.env.PORT || 8000
 const app = express()

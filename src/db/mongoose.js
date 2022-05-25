@@ -1,7 +1,4 @@
 const mongoose = require('mongoose')
-const dotenv = require('dotenv')
-
-dotenv.config({ path: '.env' })
 
 function databaseConnect(app) {
   mongoose.connection.on('connected', () => console.log('Mongoose connected to MongoDB'))
